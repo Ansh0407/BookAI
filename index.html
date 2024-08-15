@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookAI - Explore AI Book Writing</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <header class="navbar">
+        <div class="logo">
+            <img src="./assets/logo.png" alt="BookAI Logo" class="logo-img" />
+        </div>
+        <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#">Roadmap</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">Models</a></li>
+        </ul>
+        <button class="button login-signup">Login / Sign Up</button>
+    </header>
+    <!--Hero Section-->
+    <section class="hero">
+        <h1>
+        Explore the Possibilities of
+        <span class="highlight">AI Book Writing</span> with BookAI
+      </h1>
+        <p class="subheading">
+            Unleash the power of AI to create captivating books in minutes.
+            <br />Download, Distribute wherever you want. Generate unlimited free books.
+        </p>
+        <div class="cta-buttons">
+            <button class="button cta">Get Started</button>
+            <button class="button cta">Get API Access</button>
+        </div>
+        <p class="announcement">
+            Attention: TryBookAI has been acquired by Indicus AI. Indicus LLM will be used for text and image generation.
+        </p>
+    </section>
+    <!--Hero Section End -->
+
+    <!-- Card Section -->
+
+    <section class="card-section">
+        <div class="big-card .flex-lg-row">
+            <div class="card d-flex justify-content-flex-start">
+                <div class="card-image">
+                    <img src="./assets/paradox.png" alt="The Quantum Paradox Book Cover" />
+                </div>
+                <div class="card-content">
+                    <div class="card-title">Book Generator</div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="model-select">Model</label>
+                            <select id="model-select" class="form-control">
+                                <option>GPT-4.0 Mini</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="language-select">Language</label>
+                            <select id="language-select" class="form-control">
+                                <option>English</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="book-topic">Book Topic</label>
+                            <input type="text" id="book-topic" class="form-control" value="The Quantum Paradox" />
+                        </div>
+                        <div class="form-group">
+                            <label for="word-count">Target Word Count</label>
+                            <input type="number" id="word-count" class="form-control" value="100" />
+                        </div>
+                        <button class="button generate-btn">Generate Book</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="analytics-dashboard">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt unde inventore officiis vel, nihil modi dolor error sapiente magnam molestias nobis laudantium neque, velit cum, architecto nulla dicta maxime delectus? Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Aliquid dolorem unde modi tempora cum ullam labore suscipit esse perferendis totam in, earum eius maxime distinctio voluptas animi hic fuga omnis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+                        quisquam provident iure cum repellat omnis similique, ipsam possimus labore est aliquam consectetur earum, illo, debitis ratione sequi distinctio modi ipsum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam aperiam
+                        nesciunt soluta sapiente impedit necessitatibus maxime commodi ipsa dolore rerum repellendus quibusdam minus iure optio, quae magnam, totam pariatur et?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto animi saepe
+                        quibusdam libero, repellat labore id non tempora cum maxime necessitatibus consequuntur eveniet doloribus praesentium ducimus molestiae porro rerum!. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id in non eveniet,
+                        voluptas, repellendus nobis, vero dolorem repellat fugiat autem modi hic officia veritatis. Saepe praesentium ut illum unde perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit unde suscipit pariatur
+                        perspiciatis, reiciendis ullam velit molestiae. Nostrum vero ad iusto expedita animi, reprehenderit et illo dolore eveniet minima maxime!
+                    </p>
+                    <div class="word-count">Word Count: 440</div>
+                    <div class="genre-classification">Genre: Sci-Fi</div>
+                    <div class="readability-score">
+                        Readability: 183 (Flesch-Kincaid)
+                    </div>
+                    <div class="sentiment-analysis">Sentiment: Negative</div>
+                </div>
+                <button class="button save-btn">Download & Save Your Book</button>
+                <br />
+                <button class="button view-btn">View Saved PDFs</button>
+            </div>
+        </div>
+    </section>
+    <!-- Card Section End-->
+
+    <!-- features section begin -->
+    <section id="features">
+        <div class="marquee-container">
+            <div class="marquee">
+                <div class="marquee-item">
+                    <i class="fas fa-robot"></i>
+                    <h3>AI-Powered Writing</h3>
+                    <p>Generate high-quality content with advanced AI technology.</p>
+                </div>
+                <div class="marquee-item">
+                    <i class="fas fa-book-open"></i>
+                    <h3>Custom Genres</h3>
+                    <p>Create stories in any genre or blend multiple styles.</p>
+                </div>
+                <div class="marquee-item">
+                    <i class="fas fa-download"></i>
+                    <h3>Instant Download</h3>
+                    <p>Get your completed book in various formats instantly.</p>
+                </div>
+                <div class="marquee-item">
+                    <i class="fas fa-globe"></i>
+                    <h3>Multilingual</h3>
+                    <p>Generate content in multiple languages effortlessly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- features section end -->
+
+    <!--How it works-->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <i class="fas fa-tools"></i>
+                    <h3>Choose Your Genre</h3>
+                    <p>Select from a wide range of genres or create a custom blend.</p>
+                </div>
+                <div class="col-md-6">
+                    <i class="fas fa-keyboard"></i>
+                    <h3>Provide Key Details</h3>
+                    <p>Input main characters, plot points, or themes to guide the AI.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <i class="fas fa-magic"></i>
+                    <h3>AI Generation</h3>
+                    <p>Our advanced AI creates your book based on your inputs.</p>
+                </div>
+                <div class="col-md-6">
+                    <i class="fas fa-cloud-download-alt"></i>
+                    <h3>Review and Download</h3>
+                    <p>Review your generated book and download in your preferred format.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--sample books-->
+    <section class="sample-books">
+        <div class="container">
+            <h2 style="color: #ffff;">Sample Books Generated by BookAI</h2>
+            <p style="color: #ffff;">Explore some of the captivating books created using our AI technology.</p>
+            <div class="row">
+                <div class="col-md-4 book-card">
+                    <img src="./assets/paradox.png" alt="The Quantum Paradox Book Cover" />
+                    <h3>Science Fiction</h3>
+                    <p>"As Dr. Elara stepped through the shimmering portal, she knew there was no turning back. The fate of two universes now rested in her hands..."</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="col-md-4 book-card">
+                    <img src="./assets/whisper.png" alt="Whispers in the Mist Book Cover" />
+                    <h3>Mystery</h3>
+                    <p>"The old lighthouse stood silent, its beacon long extinguished. But on foggy nights, some swore they could still see its ghostly light..."</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="col-md-4 book-card">
+                    <img src="./assets/echoes.png" alt="Echoes of Eternity Book Cover" />
+                    <h3>Fantasy</h3>
+                    <p>"The ancient prophecy spoke of a child born with starlight in their eyes. As the comet blazed overhead, the kingdom held its breath..."</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <h3>&copy; 2024 YourCompany. All rights reserved.</h3>
+            <p>Designed by <a href="https://github.com/Ansh0407" target="_blank" rel="noopener noreferrer">Ansh Bhandari</a></p>
+          <nav>
+            <a href="/terms">Terms of Service</a>
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/contact">Contact Us</a>
+          </nav>
+        </div>
+       
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="particles.js"></script>
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
